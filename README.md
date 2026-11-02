@@ -12,9 +12,9 @@ A premium, responsive, single-page developer portfolio for **Rahul Mali**, built
 
 ## Project Overview
 
-This project presents Rahul Mali's profile as a Computer Science Engineering student, Full Stack Developer, and Cloud & DevOps enthusiast from Solapur, Maharashtra, India.
+This project presents Rahul Sampatrao Mali's profile as a B.E. Computer Science & Engineering student at NBN Sinhgad College of Engineering, Full Stack Developer, and Cloud & DevOps enthusiast from Solapur, Maharashtra, India.
 
-The site includes a hero introduction, about section, education details, technical skills, three project showcases, internship experience, contact links, and a footer with an automatically updating copyright year.
+The site includes a hero introduction, about section, education details, technical skills, four project showcases, social media coordinator and volunteer experience, contact links, and a footer with an automatically updating copyright year.
 
 The design uses a dark developer-focused theme:
 
@@ -47,11 +47,12 @@ The original internship brief specifies **AWS S3 static hosting + CloudFront HTT
 - Hero section with developer-themed animated code window
 - Smooth scrolling and subtle scroll-reveal animations
 - Reduced-motion support via `prefers-reduced-motion`
-- Skills grouped by Frontend, Backend, Database, Tools, and Concepts
-- Exactly three project cards with technology badges
-- Public repository link only where one was provided (CertifyPro)
-- Internship experience timeline
-- Contact section with email, GitHub, LinkedIn, and location
+- Skills grouped by Frontend, Backend, Database, Tools, Concepts, and Design & Media
+- Four project cards with technology badges
+- Public repository link only where one was provided (Smart Certificate Generation)
+- Social media coordinator and volunteer experience timeline
+- Certifications and photography achievement highlighted in the About section
+- Contact section with primary/alternate email, phone, GitHub, LinkedIn, and location
 - Downloadable one-page resume (PDF), linked from the hero, contact, and footer
 - Automatically updated copyright year
 - Back-to-top link
@@ -121,20 +122,21 @@ Edit `resume/Rahul_Mali_Resume.html`, then open it in Chrome and choose **Print 
 
 ## Contact Email
 
-The portfolio uses the following public contact address:
+The portfolio uses the following public contact addresses:
 
 ```text
+rahulmali.nbnscoe.comp@gmail.com
 malir3557@gmail.com
 ```
 
-It is used in the contact button, the visible email line, and the footer email icon. To change it later, update all three `mailto:` references in **index.html**.
+The primary address is used in the contact button and footer email icon; both addresses appear in the visible contact line. The phone number is linked as `tel:+918767994159`. To change these later, update the `mailto:` and `tel:` references in **index.html**.
 
 Recommended files to review before publishing:
 
 - `index.html` — meta description and social/profile URLs
 - `README.md` — live URL and deployment notes
 
-No personal details, statistics, achievements, or experience have been invented.
+Contact, education, experience, project, certification, and achievement details reflect the information supplied by Rahul Mali.
 
 ---
 
@@ -275,8 +277,8 @@ Verified locally as a static site:
 
 - [x] All internal navigation links target existing sections
 - [x] Both hero CTAs point to Projects and Contact
-- [x] All three project cards render with descriptions and technology badges
-- [x] CertifyPro repository URL is correct; no repository URLs were invented for the other two projects
+- [x] All four project cards render with descriptions and technology badges
+- [x] Smart Certificate Generation repository URL is correct; no repository URLs were invented for the other three projects
 - [x] GitHub and LinkedIn URLs point to the provided profiles
 - [x] No broken image references (the site uses an SVG favicon and CSS-built visuals)
 - [x] Resume download appears in the hero, contact section, and footer
