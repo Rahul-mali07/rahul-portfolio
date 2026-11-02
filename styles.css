@@ -26,9 +26,6 @@
   --border-strong: rgba(163, 243, 107, 0.28);
   --border-subtle: rgba(255, 255, 255, 0.06);
 
-  --warning: #e9c46a;
-  --warning-soft: rgba(233, 196, 106, 0.08);
-
   --font-display: "Space Grotesk", "Segoe UI", sans-serif;
   --font-body: "Inter", "Segoe UI", sans-serif;
   --font-mono: "JetBrains Mono", "Consolas", monospace;
@@ -1522,16 +1519,17 @@ button {
   font-size: 0.86em;
 }
 
-.placeholder-tag {
-  padding: 3px 8px;
-  border: 1px solid rgba(233, 196, 106, 0.28);
-  border-radius: 5px;
-  background: var(--warning-soft);
-  color: var(--warning);
-  font-family: var(--font-body);
-  font-size: 0.64rem;
-  font-weight: 500;
-  line-height: 1.5;
+.contact-email a {
+  color: var(--text);
+  border-bottom: 1px solid transparent;
+  transition:
+    color 0.25s var(--ease),
+    border-color 0.25s var(--ease);
+}
+
+.contact-email a:hover {
+  color: var(--accent);
+  border-bottom-color: var(--border-strong);
 }
 
 .contact-cards {

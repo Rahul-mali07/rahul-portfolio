@@ -2,9 +2,9 @@
 
 A premium, responsive, single-page developer portfolio for **Rahul Mali**, built with semantic HTML5, modern CSS3, and minimal vanilla JavaScript. It is a fully static website and is prepared for free hosting on **GitHub Pages**.
 
-> **Live website (placeholder):** `https://YOUR-GITHUB-USERNAME.github.io/rahul-portfolio/`
+> **Live website:** `https://Rahul-mali07.github.io/rahul-portfolio/`
 >
-> Replace `YOUR-GITHUB-USERNAME` after enabling GitHub Pages.
+> This URL becomes active after the repository is pushed and GitHub Pages is enabled.
 
 ---
 
@@ -104,26 +104,20 @@ rahul-portfolio/
 
 ---
 
-## Before Publishing: Replace the Placeholder Email
+## Contact Email
 
-The correct email address was not provided, so a clearly marked placeholder is used:
+The portfolio uses the following public contact address:
 
 ```text
-rahul.mali@example.com
+malir3557@gmail.com
 ```
 
-Search for `rahul.mali@example.com` in **index.html** (it appears in the contact section and footer) and replace it with the real address. Also update the visible placeholder note in the contact section, then remove or adjust the note.
-
-The warnings are marked in the HTML with:
-
-```html
-<!-- REPLACE: placeholder email below before publishing -->
-```
+It is used in the contact button, the visible email line, and the footer email icon. To change it later, update all three `mailto:` references in **index.html**.
 
 Recommended files to review before publishing:
 
-- `index.html` — email address, meta description, social/profile URLs
-- `README.md` — live URL and any personal notes
+- `index.html` — meta description and social/profile URLs
+- `README.md` — live URL and deployment notes
 
 No personal details, statistics, achievements, or experience have been invented.
 
@@ -183,7 +177,17 @@ The GitHub profile is **https://github.com/Rahul-mali07**. The example below use
 
 ### Push the project from VS Code terminal
 
-Open the terminal in the `rahul-portfolio` project folder and run:
+This project is already initialized as a local Git repository with the `main` branch, an initial commit, and the `origin` remote configured.
+
+After creating the empty repository on GitHub, open the terminal in the `rahul-portfolio` project folder and run:
+
+```bash
+git push -u origin main
+```
+
+If Git asks for credentials, sign in through the browser or use a GitHub Personal Access Token instead of a password.
+
+For a fresh copy of the project that is not yet a Git repository, run:
 
 ```bash
 git init
@@ -193,8 +197,6 @@ git branch -M main
 git remote add origin https://github.com/Rahul-mali07/rahul-portfolio.git
 git push -u origin main
 ```
-
-If Git asks for credentials, sign in through the browser or use a GitHub Personal Access Token instead of a password.
 
 If the remote already exists, use:
 
@@ -234,7 +236,7 @@ For this account, the expected format is:
 https://Rahul-mali07.github.io/rahul-portfolio/
 ```
 
-Update the placeholder at the top of this README with the real URL.
+The repository is expected to be named `rahul-portfolio`, so the live URL should match the one at the top of this README.
 
 > **Repository name special case:** If you name the repository exactly `Rahul-mali07.github.io`, the site is served at `https://Rahul-mali07.github.io/` instead of with a `/rahul-portfolio/` path. The project uses relative asset paths, so it works in both cases.
 
@@ -264,7 +266,7 @@ Verified locally as a static site:
 - [x] No broken image references (the site uses an SVG favicon and CSS-built visuals)
 - [x] No backend dependency; all content is static
 - [x] Mobile menu opens, closes, and updates `aria-expanded`
-- [x] Layout adapts at 1060px, 900px, 640px, and 380px breakpoints
+- [x] Layout adapts across tested widths from 320px to 1440px
 - [x] Copyright year updates automatically
 - [x] Reduced-motion preference disables reveal animations
 - [x] No framework/build step required; GitHub Pages can serve the root folder directly
@@ -284,17 +286,17 @@ Verified locally as a static site:
 
 **Manual checks left for the owner:**
 
-- [ ] Replace the placeholder email in `index.html`
 - [ ] Publish to GitHub and confirm the live URL
-- [ ] Test in the latest Chrome, Edge, Firefox, and Safari
+- [ ] Test in the latest Firefox and Safari (Chrome and Edge already passed)
 - [ ] Confirm the final live URL loads over HTTPS through GitHub Pages
+- [ ] Obtain coordinator approval for the GitHub Pages alternative
 
 ---
 
 ## Accessibility Notes
 
 - Skip-to-content link
-- Semantic landmarks: `header`, `nav`, `main`, `section`, `article`, `aside`, `footer`
+- Semantic landmarks: `header`, `nav`, `main`, `section`, `article`, `footer`
 - One `h1`, logical heading levels below it
 - Visible `:focus-visible` outline
 - Mobile toggle uses `aria-expanded`, `aria-controls`, and a dynamic `aria-label`
