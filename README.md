@@ -52,6 +52,7 @@ The original internship brief specifies **AWS S3 static hosting + CloudFront HTT
 - Public repository link only where one was provided (CertifyPro)
 - Internship experience timeline
 - Contact section with email, GitHub, LinkedIn, and location
+- Downloadable one-page resume (PDF), linked from the hero, contact, and footer
 - Automatically updated copyright year
 - Back-to-top link
 - Semantic HTML, skip link, ARIA labels, and visible focus states
@@ -75,6 +76,7 @@ The original internship brief specifies **AWS S3 static hosting + CloudFront HTT
 - Git
 - GitHub
 - GitHub Pages
+- Vercel
 - VS Code (recommended editor)
 
 The site loads no jQuery, Bootstrap, React, or other runtime frameworks. Bootstrap, React, Next.js, etc. appear only as skills listed in the portfolio content.
@@ -90,19 +92,30 @@ rahul-portfolio/
 ├── styles.css
 ├── script.js
 ├── README.md
+├── .gitignore
+├── resume/
+│   └── Rahul_Mali_Resume.html
 │
 └── assets/
     ├── images/
     │   └── .gitkeep
-    └── icons/
-        └── favicon.svg
+    ├── icons/
+    │   └── favicon.svg
+    └── resume/
+        └── Rahul_Mali_Resume.pdf
 ```
 
 - **index.html** — semantic page structure and all content
 - **styles.css** — design tokens, layout, responsive rules, animations
 - **script.js** — mobile navigation, active nav state, reveal animations, copyright year
+- **resume/Rahul_Mali_Resume.html** — editable source for the resume
+- **assets/resume/Rahul_Mali_Resume.pdf** — downloadable resume linked from the site
 - **assets/icons/favicon.svg** — site icon
 - **assets/images/** — reserved for future optimized images
+
+### Updating the resume
+
+Edit `resume/Rahul_Mali_Resume.html`, then open it in Chrome and choose **Print → Save as PDF** using A4 paper, default margins, and no browser headers or footers. Save the result as `assets/resume/Rahul_Mali_Resume.pdf`.
 
 ---
 
@@ -266,6 +279,8 @@ Verified locally as a static site:
 - [x] CertifyPro repository URL is correct; no repository URLs were invented for the other two projects
 - [x] GitHub and LinkedIn URLs point to the provided profiles
 - [x] No broken image references (the site uses an SVG favicon and CSS-built visuals)
+- [x] Resume download appears in the hero, contact section, and footer
+- [x] Resume PDF is one A4 page with selectable text and working contact/profile links
 - [x] No backend dependency; all content is static
 - [x] Mobile menu opens, closes, and updates `aria-expanded`
 - [x] Layout adapts across tested widths from 320px to 1440px
@@ -277,6 +292,7 @@ Verified locally as a static site:
 
 - HTMLHint: **0 errors**
 - `node --check script.js`: **passed**
+- Resume PDF: **1 A4 page**, selectable text, metadata, and 5 clickable links; served as `application/pdf`
 - axe-core 4.10.2 (desktop and mobile): **0 WCAG A/AA violations**
 - Lighthouse (live GitHub Pages, mobile): **Performance 77**, **Accessibility 100**, **Best Practices 100**, **SEO 100**
 - Lighthouse total blocking time: **0 ms**; cumulative layout shift: **0**

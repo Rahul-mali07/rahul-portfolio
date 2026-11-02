@@ -1659,6 +1659,7 @@ button {
 
 .footer-bottom-right {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 22px;
 }
@@ -1667,6 +1668,29 @@ button {
   color: var(--muted);
   font-family: var(--font-mono);
   font-size: 0.68rem;
+}
+
+.footer-resume {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--accent);
+  font-size: 0.74rem;
+  font-weight: 500;
+  transition: color 0.25s var(--ease);
+}
+
+.footer-resume i {
+  font-size: 0.82em;
+  transition: transform 0.25s var(--ease);
+}
+
+.footer-resume:hover {
+  color: var(--accent-strong);
+}
+
+.footer-resume:hover i {
+  transform: translateY(2px);
 }
 
 .back-to-top {
