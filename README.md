@@ -1,10 +1,10 @@
 # Rahul Mali — Developer Portfolio
 
-A premium, responsive, single-page developer portfolio for **Rahul Mali**, built with semantic HTML5, modern CSS3, and minimal vanilla JavaScript. It is a fully static website and is prepared for free hosting on **GitHub Pages**.
+A premium, responsive, single-page developer portfolio for **Rahul Mali**, built with semantic HTML5, modern CSS3, and minimal vanilla JavaScript. It is deployed as a fully static website on **GitHub Pages**.
 
-> **Live website:** `https://Rahul-mali07.github.io/rahul-portfolio/`
+> **Live website (verified):** `https://rahul-mali07.github.io/rahul-portfolio/`
 >
-> This URL becomes active after the repository is pushed and GitHub Pages is enabled.
+> HTTPS is enforced through GitHub Pages.
 
 ---
 
@@ -233,12 +233,12 @@ https://YOUR-GITHUB-USERNAME.github.io/rahul-portfolio/
 For this account, the expected format is:
 
 ```text
-https://Rahul-mali07.github.io/rahul-portfolio/
+https://rahul-mali07.github.io/rahul-portfolio/
 ```
 
-The repository is expected to be named `rahul-portfolio`, so the live URL should match the one at the top of this README.
+The repository is named `rahul-portfolio`, so the live URL matches the one at the top of this README.
 
-> **Repository name special case:** If you name the repository exactly `Rahul-mali07.github.io`, the site is served at `https://Rahul-mali07.github.io/` instead of with a `/rahul-portfolio/` path. The project uses relative asset paths, so it works in both cases.
+> **Repository name special case:** If you name the repository exactly `Rahul-mali07.github.io`, the site is served at `https://rahul-mali07.github.io/` instead of with a `/rahul-portfolio/` path. The project uses relative asset paths, so it works in both cases.
 
 ### Updating the live site
 
@@ -284,11 +284,16 @@ Verified locally as a static site:
 
 > Lighthouse performance may vary by network and host. The local test used Python's development server, which does not add gzip/brotli compression or long-lived asset caching. GitHub Pages serves static assets with compression and CDN delivery, which typically improves load times.
 
+### Deployment Status
+
+- [x] Repository published: `https://github.com/Rahul-mali07/rahul-portfolio`
+- [x] GitHub Pages enabled from the `main` branch root
+- [x] Live site verified over HTTPS: `https://rahul-mali07.github.io/rahul-portfolio/`
+- [x] Deployment tested in Chrome and Edge with no console or network errors
+
 **Manual checks left for the owner:**
 
-- [ ] Publish to GitHub and confirm the live URL
-- [ ] Test in the latest Firefox and Safari (Chrome and Edge already passed)
-- [ ] Confirm the final live URL loads over HTTPS through GitHub Pages
+- [ ] Test in the latest Firefox and Safari
 - [ ] Obtain coordinator approval for the GitHub Pages alternative
 
 ---
