@@ -4,7 +4,9 @@ A premium, responsive, single-page developer portfolio for **Rahul Mali**, built
 
 > **Live website (verified):** `https://rahul-mali07.github.io/rahul-portfolio/`
 >
-> HTTPS is enforced through GitHub Pages.
+> **Vercel mirror:** `https://rahul-portfolio-six-olive.vercel.app/`
+>
+> HTTPS is enforced on both deployments.
 
 ---
 
@@ -290,6 +292,8 @@ Verified locally as a static site:
 - [x] Repository published: `https://github.com/Rahul-mali07/rahul-portfolio`
 - [x] GitHub Pages enabled from the `main` branch root
 - [x] Live site verified over HTTPS: `https://rahul-mali07.github.io/rahul-portfolio/`
+- [x] Vercel production deployment verified over HTTPS: `https://rahul-portfolio-six-olive.vercel.app/`
+- [x] Vercel project connected to the GitHub repository for automatic redeploys
 - [x] Deployment tested in Chrome, Edge, Firefox 132, and WebKit 18.2 with no console or network errors
 - [x] Mobile navigation, responsive layout, contact email, and internal links verified against the live site
 
@@ -330,6 +334,6 @@ Verified locally as a static site:
 
 - Fonts: [Google Fonts](https://fonts.google.com/) — Space Grotesk, Inter, JetBrains Mono
 - Icons: [Font Awesome 6 Free](https://fontawesome.com/)
-- Hosting: [GitHub Pages](https://pages.github.com/)
+- Hosting: [GitHub Pages](https://pages.github.com/) and [Vercel](https://vercel.com/)
 
 All portfolio content belongs to **Rahul Mali**. This project was created for the Maincrafts Technology Cloud Computing & DevOps Internship, Task 1, using a zero-cost GitHub Pages alternative to AWS S3 + CloudFront.
