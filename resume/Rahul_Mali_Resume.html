@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="author" content="Rahul Mali">
-  <meta name="description" content="Resume of Rahul Mali, Full Stack Developer and Computer Science Engineering student.">
-  <title>Rahul Mali - Resume</title>
+  <meta name="author" content="Rahul Sampatrao Mali">
+  <meta name="description" content="Resume of Rahul Sampatrao Mali, B.E. Computer Science and Engineering student and full stack developer.">
+  <title>Rahul Sampatrao Mali - Resume</title>
   <style>
     @page {
       size: A4;
@@ -14,11 +14,10 @@
 
     :root {
       --ink: #17211a;
-      --ink-soft: #3c4a40;
-      --muted: #5f6f64;
+      --ink-soft: #36453a;
+      --muted: #5d6d62;
       --accent: #2d6a4f;
-      --line: #cfdcd3;
-      --wash: #f1f7f3;
+      --line: #d2ded6;
     }
 
     * {
@@ -32,7 +31,7 @@
       background: #ffffff;
       color: var(--ink);
       font-family: "Segoe UI", Arial, sans-serif;
-      font-size: 9.6pt;
+      font-size: 9.7pt;
       line-height: 1.38;
       -webkit-print-color-adjust: exact;
       print-color-adjust: exact;
@@ -53,40 +52,39 @@
 
     .top-rule {
       height: 3px;
-      margin-bottom: 10px;
+      margin-bottom: 8px;
       background: linear-gradient(90deg, var(--accent), #8ccf9f);
       border-radius: 99px;
     }
 
     header {
-      padding-bottom: 10px;
+      padding-bottom: 7px;
       border-bottom: 1px solid var(--line);
     }
 
     h1 {
       margin: 0;
       color: var(--ink);
-      font-size: 25pt;
+      font-size: 23pt;
       font-weight: 700;
-      letter-spacing: -0.8px;
+      letter-spacing: -0.6px;
       line-height: 1;
     }
 
     .role {
-      margin: 5px 0 0;
+      margin: 4px 0 0;
       color: var(--accent);
-      font-size: 10.5pt;
+      font-size: 9.8pt;
       font-weight: 600;
-      letter-spacing: 0.2px;
     }
 
     .contact {
       display: flex;
       flex-wrap: wrap;
-      gap: 3px 0;
-      margin-top: 8px;
+      gap: 2px 0;
+      margin-top: 5px;
       color: var(--ink-soft);
-      font-size: 8.7pt;
+      font-size: 8.2pt;
     }
 
     .contact span {
@@ -100,13 +98,13 @@
       display: inline-block;
       width: 3px;
       height: 3px;
-      margin: 0 8px;
+      margin: 0 6px;
       border-radius: 50%;
       background: #9bb0a2;
     }
 
     section {
-      margin-top: 10px;
+      margin-top: 8.5px;
       page-break-inside: avoid;
     }
 
@@ -114,11 +112,11 @@
       display: flex;
       align-items: center;
       gap: 8px;
-      margin: 0 0 6px;
+      margin: 0 0 4px;
       color: var(--accent);
-      font-size: 9.2pt;
+      font-size: 8.7pt;
       font-weight: 700;
-      letter-spacing: 1.4px;
+      letter-spacing: 1.1px;
       line-height: 1;
       text-transform: uppercase;
     }
@@ -139,98 +137,61 @@
       text-align: justify;
     }
 
+    .skills {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5px 16px;
+      color: var(--ink-soft);
+      font-size: 9pt;
+    }
+
+    .skills strong {
+      color: var(--ink);
+      font-weight: 700;
+    }
+
+    .item {
+      margin-top: 5.5px;
+      page-break-inside: avoid;
+    }
+
+    .item:first-of-type {
+      margin-top: 0;
+    }
+
     .item-head {
       display: flex;
       align-items: baseline;
       justify-content: space-between;
-      gap: 14px;
+      gap: 12px;
     }
 
     h3 {
       margin: 0;
       color: var(--ink);
-      font-size: 9.9pt;
+      font-size: 9.8pt;
       font-weight: 700;
-      line-height: 1.25;
+      line-height: 1.24;
     }
 
     .item-head > span {
       flex-shrink: 0;
       color: var(--muted);
-      font-size: 8.5pt;
+      font-size: 8pt;
       font-weight: 600;
     }
 
     .sub {
       margin-top: 1px;
       color: var(--accent);
-      font-size: 9pt;
-      font-weight: 600;
-    }
-
-    .note {
-      margin-top: 2px;
-      color: var(--muted);
-      font-size: 8.6pt;
-    }
-
-    .skills {
-      display: grid;
-      gap: 3px;
-    }
-
-    .skill-row {
-      display: grid;
-      grid-template-columns: 27mm 1fr;
-      gap: 8px;
-    }
-
-    .skill-label {
-      color: var(--ink);
-      font-weight: 700;
       font-size: 8.9pt;
-    }
-
-    .skill-value {
-      color: var(--ink-soft);
-      font-size: 8.9pt;
-    }
-
-    .project {
-      margin-top: 7px;
-      page-break-inside: avoid;
-    }
-
-    .project:first-of-type {
-      margin-top: 0;
-    }
-
-    .project-link {
-      color: var(--accent);
-      font-size: 8.2pt;
       font-weight: 600;
-      white-space: nowrap;
-    }
-
-    ul {
-      margin: 3px 0 0;
-      padding-left: 15px;
-      color: var(--ink-soft);
-    }
-
-    li {
-      margin-top: 1.5px;
-      padding-left: 2px;
-    }
-
-    li::marker {
-      color: var(--accent);
     }
 
     .stack {
-      margin-top: 3px;
+      margin-top: 1px;
       color: var(--muted);
-      font-size: 8.3pt;
+      font-size: 8pt;
     }
 
     .stack strong {
@@ -238,20 +199,59 @@
       font-weight: 600;
     }
 
-    .experience {
-      page-break-inside: avoid;
+    ul {
+      margin: 2px 0 0;
+      padding-left: 14px;
+      color: var(--ink-soft);
     }
 
-    .experience .sub {
+    li {
       margin-top: 1px;
+      padding-left: 1px;
+    }
+
+    li::marker {
+      color: var(--accent);
+    }
+
+    .certifications {
+      display: grid;
+      grid-template-columns: 1.35fr 1fr;
+      gap: 1px 14px;
+      color: var(--ink-soft);
+      font-size: 8.5pt;
+    }
+
+    .certifications span::before {
+      content: "";
+      display: inline-block;
+      width: 3px;
+      height: 3px;
+      margin: 0 5px 2px 0;
+      border-radius: 50%;
+      background: var(--accent);
+    }
+
+    .compact-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1px 22px;
+      color: var(--ink-soft);
+      font-size: 8.9pt;
+    }
+
+    .compact-list strong {
+      color: var(--ink);
+      font-weight: 700;
     }
 
     .footer {
       display: flex;
+      flex-wrap: wrap;
       justify-content: space-between;
-      gap: 16px;
-      margin-top: 12px;
-      padding-top: 7px;
+      gap: 2px 16px;
+      margin-top: 9px;
+      padding-top: 6px;
       border-top: 1px solid var(--line);
       color: var(--muted);
       font-size: 8pt;
@@ -285,11 +285,12 @@
     <div class="top-rule"></div>
 
     <header>
-      <h1>Rahul Mali</h1>
-      <p class="role">Full Stack Developer | Cloud &amp; DevOps Enthusiast</p>
+      <h1>Rahul Sampatrao Mali</h1>
+      <p class="role">B.E. Computer Science &amp; Engineering | Full Stack Developer</p>
       <div class="contact">
-        <span>Solapur, Maharashtra, India</span>
-        <span><a href="mailto:malir3557@gmail.com">malir3557@gmail.com</a></span>
+        <span>+91-8767994159</span>
+        <span><a href="mailto:rahulmali.nbnscoe.comp@gmail.com">rahulmali.nbnscoe.comp@gmail.com</a></span>
+        <span>Solapur, Maharashtra, India - 413255</span>
         <span><a href="https://github.com/Rahul-mali07">github.com/Rahul-mali07</a></span>
         <span><a href="https://www.linkedin.com/in/rahul-mali-1abb8431a/">linkedin.com/in/rahul-mali-1abb8431a</a></span>
         <span><a href="https://rahul-mali07.github.io/rahul-portfolio/">rahul-mali07.github.io/rahul-portfolio</a></span>
@@ -298,110 +299,133 @@
 
     <section>
       <h2>Professional Summary</h2>
-      <p class="summary">Computer Science Engineering student and full stack developer with hands-on experience building responsive web applications using React, Next.js, Node.js, Python, and SQL/NoSQL databases. Comfortable working across frontend interfaces, backend logic, and deployment workflows, with a growing foundation in cloud computing and DevOps. Focused on turning ideas into clean, practical, user-centered software.</p>
+      <p class="summary">A Computer Science Engineering student seeking an entry-level software role to apply skills in Java, full-stack development, and problem-solving while contributing to scalable and impactful projects.</p>
+    </section>
+
+    <section>
+      <h2>Key Expertise</h2>
+      <div class="skills">
+        <span><strong>Programming:</strong> Java, Python, JavaScript</span>
+        <span><strong>Frontend:</strong> React.js, HTML, CSS</span>
+        <span><strong>Backend:</strong> Node.js</span>
+        <span><strong>Databases:</strong> MongoDB, MySQL, SQL Server</span>
+        <span><strong>Design &amp; Media:</strong> UI/UX, Figma, Brand Design, Photography, Videography, Editing</span>
+        <span><strong>Tools:</strong> Git, GitHub, VS Code, Vercel, MediaPipe</span>
+        <span><strong>Concepts:</strong> OOP, Data Structures, Full-Stack Development, Computer Vision</span>
+      </div>
     </section>
 
     <section>
       <h2>Education</h2>
-      <div class="item-head">
-        <h3>Bachelor of Technology - Computer Science Engineering</h3>
-        <span>Solapur, India</span>
-      </div>
-      <p class="sub">NB Navale Sinhgad College of Engineering</p>
-      <p class="note">Focus areas: Full Stack Development, Data Structures, Object-Oriented Programming, Cloud Computing, and DevOps Fundamentals.</p>
-    </section>
 
-    <section>
-      <h2>Technical Skills</h2>
-      <div class="skills">
-        <div class="skill-row">
-          <span class="skill-label">Frontend</span>
-          <span class="skill-value">HTML, CSS, JavaScript, React.js, Next.js, Bootstrap</span>
+      <div class="item">
+        <div class="item-head">
+          <h3>NBN Sinhgad College of Engineering, Solapur</h3>
+          <span>2023 - 2027</span>
         </div>
-        <div class="skill-row">
-          <span class="skill-label">Backend</span>
-          <span class="skill-value">Node.js, Python, PHP, Flask, ASP.NET Core</span>
+        <p class="sub">B.E. - Computer Science &amp; Engineering | CGPA: 9.08/10</p>
+      </div>
+
+      <div class="item">
+        <div class="item-head">
+          <h3>Sadguru Gadage Maharaj College (SGM), Karad</h3>
+          <span>2023</span>
         </div>
-        <div class="skill-row">
-          <span class="skill-label">Databases</span>
-          <span class="skill-value">MongoDB, MySQL, SQL Server</span>
+        <p class="sub">12th | MSBSHSE | Percentage: 60/100</p>
+      </div>
+
+      <div class="item">
+        <div class="item-head">
+          <h3>Mahatma Gandhi Vidhyalay, Savalaj, Tasgaon, Sangli</h3>
+          <span>2021</span>
         </div>
-        <div class="skill-row">
-          <span class="skill-label">Tools</span>
-          <span class="skill-value">Git, GitHub, VS Code, Vercel</span>
-        </div>
-        <div class="skill-row">
-          <span class="skill-label">Concepts</span>
-          <span class="skill-value">OOP, Data Structures, Cloud Computing, DevOps Fundamentals</span>
-        </div>
+        <p class="sub">10th | MSBSHSE | Percentage: 78.80/100</p>
       </div>
     </section>
 
     <section>
-      <h2>Selected Projects</h2>
+      <h2>Professional Experience</h2>
 
-      <article class="project">
+      <div class="item">
         <div class="item-head">
-          <h3>CertifyPro - Certificate Generation &amp; Verification Platform</h3>
-          <a class="project-link" href="https://github.com/Rahul-mali07/certifyPro">Repository</a>
+          <h3>Social Media Coordinator - Student Association, Computer Science Department</h3>
+          <span>01 Jul 2025 - 30 May 2026</span>
         </div>
+        <p class="sub">NBN Sinhgad College of Engineering, Solapur</p>
         <ul>
-          <li>Built a platform for automatic and bulk certificate generation with verification support.</li>
-          <li>Implemented QR code verification, PDF downloads, and email integration for issuing and validating certificates.</li>
+          <li>Managed social media activities for the department, including photography, videography, and editing.</li>
         </ul>
-        <p class="stack"><strong>Stack:</strong> Next.js, React.js, Node.js, MongoDB, Mongoose</p>
-      </article>
-
-      <article class="project">
-        <div class="item-head">
-          <h3>Recruitment and Placement Management System</h3>
-          <span>Web Application</span>
-        </div>
-        <ul>
-          <li>Developed a web-based platform for managing recruitment workflows and placement-related activities.</li>
-          <li>Built application flows with Flask and MySQL to manage recruitment and placement records.</li>
-        </ul>
-        <p class="stack"><strong>Stack:</strong> Python, Flask, MySQL, HTML, CSS</p>
-      </article>
-
-      <article class="project">
-        <div class="item-head">
-          <h3>Student Leave Approval System</h3>
-          <span>Web Application</span>
-        </div>
-        <ul>
-          <li>Built a student leave management platform with application submission and administrative approval workflows.</li>
-          <li>Implemented data access and request tracking using Entity Framework Core and SQL Server.</li>
-        </ul>
-        <p class="stack"><strong>Stack:</strong> ASP.NET Core, C#, Entity Framework Core, SQL Server</p>
-      </article>
-    </section>
-
-    <section class="experience">
-      <h2>Experience</h2>
-      <div class="item-head">
-        <h3>Frontend Development Intern</h3>
-        <span>1 Month</span>
+        <p class="stack"><strong>Skills:</strong> Photography, Videography, Editing</p>
       </div>
-      <p class="sub">CodeAlpha</p>
-      <ul>
-        <li>Completed a frontend development internship focused on building web interfaces.</li>
-        <li>Applied frontend development concepts to practical interface implementation.</li>
-      </ul>
     </section>
 
     <section>
-      <h2>Additional</h2>
-      <ul>
-        <li>Designed and deployed a responsive developer portfolio using HTML, CSS, and JavaScript on GitHub Pages and Vercel.</li>
-        <li>Continuously building knowledge in full stack development, cloud computing, and DevOps practices through hands-on projects.</li>
-      </ul>
+      <h2>Projects</h2>
+
+      <div class="item">
+        <div class="item-head">
+          <h3>Smart Certificate Generation</h3>
+          <span>Team Size: 4</span>
+        </div>
+        <p class="stack"><strong>Stack:</strong> Java, MongoDB, React.js, Node.js</p>
+        <ul>
+          <li>Developed a full-stack certificate generation system supporting bulk certificate creation, QR code verification, automated PDF generation, and email distribution.</li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <div class="item-head">
+          <h3>Driver Drowsiness Detection System</h3>
+          <span>AI Project</span>
+        </div>
+        <p class="stack"><strong>Stack:</strong> Computer Vision, MediaPipe Face Mesh, Real-time Alerts</p>
+        <ul>
+          <li>Created an AI-based drowsiness detection system using computer vision and MediaPipe Face Mesh with real-time alerts.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Certifications</h2>
+      <div class="certifications">
+        <span>The Branding Masterclass: The Entire Brand Design Process - Udemy</span>
+        <span>UX &amp; Web Design Master Course: Strategy, Design, Development - Udemy</span>
+        <span>Complete Web &amp; Mobile Designer: UI/UX, Figma + More - Udemy</span>
+        <span>Programming with Java - Infosys Springboard</span>
+        <span>Programming with Python - Infosys Springboard</span>
+      </div>
+    </section>
+
+    <section>
+      <h2>Leadership &amp; Activities</h2>
+
+      <div class="item">
+        <div class="item-head">
+          <h3>IDE Bootcamp - Volunteer</h3>
+          <span>06 Apr 2026 - 10 Apr 2026</span>
+        </div>
+        <p class="sub">Ministry of Education</p>
+        <ul>
+          <li>Supported event coordination, participant management, teamwork, and organizational activities.</li>
+          <li>Assisted in conducting innovation and entrepreneurship sessions.</li>
+        </ul>
+        <p class="stack"><strong>Focus:</strong> Entrepreneurship, Innovation, Design, Leadership, Project Planning, Responsibility</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Achievements &amp; Interests</h2>
+      <div class="compact-list">
+        <span><strong>Achievement:</strong> Winner, Photography Event</span>
+        <span><strong>Interests:</strong> Photography, Listening to Music, Editing</span>
+        <span><strong>Languages:</strong> English, Hindi, Marathi</span>
+      </div>
     </section>
 
     <div class="footer">
-      <span>Rahul Mali</span>
-      <span>malir3557@gmail.com</span>
-      <span>github.com/Rahul-mali07</span>
+      <span>Rahul Sampatrao Mali</span>
+      <span>+91-8767994159 | rahulmali.nbnscoe.comp@gmail.com</span>
+      <span>Alternate: +91-8806910912 | malir3557@gmail.com</span>
     </div>
   </main>
 </body>

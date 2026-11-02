@@ -292,7 +292,7 @@ Verified locally as a static site:
 
 - HTMLHint: **0 errors**
 - `node --check script.js`: **passed**
-- Resume PDF: **1 A4 page**, selectable text, metadata, and 5 clickable links; served as `application/pdf`
+- Resume PDF: **1 A4 page**, selectable text, metadata, and 4 clickable links; served as `application/pdf`
 - axe-core 4.10.2 (desktop and mobile): **0 WCAG A/AA violations**
 - Lighthouse (live GitHub Pages, mobile): **Performance 77**, **Accessibility 100**, **Best Practices 100**, **SEO 100**
 - Lighthouse total blocking time: **0 ms**; cumulative layout shift: **0**
