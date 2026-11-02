@@ -162,9 +162,9 @@ Follow the URL printed in the terminal.
 
 ---
 
-## Upload to GitHub
+## GitHub Deployment Reference
 
-The GitHub profile is **https://github.com/Rahul-mali07**. The example below uses the repository name `rahul-portfolio`. If you choose a different name, update the URLs accordingly.
+The GitHub profile is **https://github.com/Rahul-mali07**. Deployment is already complete; the steps below are retained for reproducibility. The example uses the repository name `rahul-portfolio`.
 
 ### Create the repository
 
@@ -276,24 +276,26 @@ Verified locally as a static site:
 - HTMLHint: **0 errors**
 - `node --check script.js`: **passed**
 - axe-core 4.10.2 (desktop and mobile): **0 WCAG A/AA violations**
-- Lighthouse (local): **Accessibility 100**, **Best Practices 100**, **SEO 100**
-- Browser console and network: **0 errors, 0 failed requests**
+- Lighthouse (live GitHub Pages, mobile): **Performance 77**, **Accessibility 100**, **Best Practices 100**, **SEO 100**
+- Lighthouse total blocking time: **0 ms**; cumulative layout shift: **0**
+- Browser console and network: **0 errors, 0 failed requests** in Chrome, Edge, Firefox 132, and WebKit 18.2 (Safari engine)
 - Responsive checks at 320, 360, 390, 480, 640, 768, 900, 1024, and 1440 px: **no horizontal page overflow**
 - No-JavaScript fallback: content remains visible and readable
 - Contrast ratios for the palette were manually checked against WCAG AA (all pass)
 
-> Lighthouse performance may vary by network and host. The local test used Python's development server, which does not add gzip/brotli compression or long-lived asset caching. GitHub Pages serves static assets with compression and CDN delivery, which typically improves load times.
+> Lighthouse performance is a throttled mobile lab score. The remaining opportunities are first paint/LCP and third-party font caching. The page has no blocking JavaScript, 0 ms total blocking time, and 0 layout shift.
 
 ### Deployment Status
 
 - [x] Repository published: `https://github.com/Rahul-mali07/rahul-portfolio`
 - [x] GitHub Pages enabled from the `main` branch root
 - [x] Live site verified over HTTPS: `https://rahul-mali07.github.io/rahul-portfolio/`
-- [x] Deployment tested in Chrome and Edge with no console or network errors
+- [x] Deployment tested in Chrome, Edge, Firefox 132, and WebKit 18.2 with no console or network errors
+- [x] Mobile navigation, responsive layout, contact email, and internal links verified against the live site
 
 **Manual checks left for the owner:**
 
-- [ ] Test in the latest Firefox and Safari
+- [ ] Optional final visual check on a real macOS Safari device
 - [ ] Obtain coordinator approval for the GitHub Pages alternative
 
 ---
