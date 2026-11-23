@@ -557,16 +557,20 @@ The screenshot checklist is in:
 screenshots/README.md
 ```
 
-No fake screenshots are included. Capture the following on your own machine:
+Real local screenshots were captured from the actual Docker Desktop state, real PowerShell output, and the real local website:
 
-1. Docker Desktop running.
-2. Docker image visible in `docker images`.
-3. Running container visible in `docker ps`.
-4. Portfolio open at `http://localhost:8080`.
-5. Docker playground instance, only if actually available.
-6. Public website access through a temporary cloud URL, only if actually deployed.
+- `screenshots/01-docker-desktop-running.png`
+- `screenshots/02-docker-image.png`
+- `screenshots/03-docker-container.png`
+- `screenshots/04-local-portfolio.png`
+- `screenshots/05-local-sections.png`
+- `screenshots/06-responsive-mobile.png`
 
-Add real image files to the `screenshots/` folder and tick the checklist after capturing them.
+No fake screenshots are included. The following remain unchecked because they require an actual cloud environment or a manual DevTools image:
+
+1. `07-browser-devtools.png` — console/network checks were verified programmatically with Chrome DevTools Protocol, but no DevTools image was captured.
+2. `08-docker-playground.png` — only if a Docker playground is actually available.
+3. `09-public-cloud-url.png` — only after a real temporary cloud deployment is tested.
 
 ---
 
