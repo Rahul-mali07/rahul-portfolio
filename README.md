@@ -488,6 +488,84 @@ Important limitations:
 - A Google account is required.
 - If your organisation requires billing before Cloud Shell access, stop and ask for permission; do not enable paid resources.
 
+### Documented free option — Cloudflare Quick Tunnel
+
+Cloudflare Quick Tunnels create a temporary `trycloudflare.com` URL for a local service. No Cloudflare account, domain, or payment is required. They are intended for testing and development only.
+
+**Status:** documented but **not executed**.
+
+1. Keep the local container running on `http://localhost:8080`.
+2. Install `cloudflared` using the instructions in the [Cloudflare Quick Tunnels documentation](https://developers.cloudflare.com/tunnel/get-started/quick-tunnels/).
+3. Run:
+
+```powershell
+cloudflared tunnel --url http://localhost:8080
+```
+
+4. Copy the real `https://*.trycloudflare.com` URL printed by the tool and open it in a browser.
+5. Stop the tunnel with `Ctrl+C` when finished.
+
+Optional access restriction:
+
+```powershell
+cloudflared tunnel --url http://localhost:8080 --allowed-mail you@example.com
+```
+
+Important limitations:
+
+- This exposes the **local** Docker container through a tunnel; it is **not** a cloud VM deployment.
+- The URL must be labelled as a temporary tunnel URL, not a permanent public IP.
+- The hostname changes every time the tunnel starts.
+- The URL stops working when `cloudflared` stops.
+- Anyone with the URL can access the site unless email restriction is used.
+- Cloudflare documents no uptime guarantee and a limit of 200 in-flight requests for Quick Tunnels.
+
+### Documented free option — iximiuz Labs Docker playground
+
+iximiuz Labs offers a free Basic tier with no credit card. It provides a disposable Linux VM with Docker Engine preinstalled and can generate a real public HTTPS URL for an exposed port. This is closer to the Task 2 cloud-VM requirement than a local tunnel.
+
+**Status:** documented but **not executed** because a free sign-in was not available in this session.
+
+1. Sign up for the free Basic tier and start the Docker playground from [iximiuz Labs](https://labs.iximiuz.com/playgrounds/docker/).
+2. Install `labctl` from the official iximiuz Labs documentation.
+3. Authenticate:
+
+```bash
+labctl auth login
+```
+
+4. Start a Docker playground:
+
+```bash
+labctl playground start docker
+```
+
+5. Open a shell in the playground and run:
+
+```bash
+git clone https://github.com/Rahul-mali07/rahul-portfolio.git
+cd rahul-portfolio
+docker build -t portfolio-website .
+docker run -d --name portfolio-container -p 8080:80 portfolio-website
+docker ps
+```
+
+6. Expose port `8080` publicly:
+
+```bash
+labctl expose port <playground-id> 8080 --public --open
+```
+
+7. Test the generated HTTPS URL in a browser.
+
+Important limitations:
+
+- The free tier has a daily playtime limit and a limited number of concurrent playgrounds.
+- The VM is disposable and sessions end.
+- The public URL is temporary and must not be presented as permanent hosting.
+- Free signup/authentication is required.
+- Do not expose sensitive services or credentials through a public playground URL.
+
 ### Deployment status summary
 
 | Deployment type | Status |
@@ -495,6 +573,8 @@ Important limitations:
 | Local Docker Desktop deployment | Verified |
 | Play with Docker temporary deployment | Not available; deprecated |
 | Google Cloud Shell temporary practice | Documented only, not executed |
+| Cloudflare Quick Tunnel temporary public URL | Documented only, not executed |
+| iximiuz Labs free Docker VM | Documented only, not executed |
 | Permanent cloud hosting | Not created |
 | AWS deployment | Not used and not claimed |
 
